@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Monitoring Anggur</string>
+    <string name="home">Home</string>
+    <string name="control">Control</string>
+    <string name="info">Info</string>
+    <string name="dash">-</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="moisture">Moisture</string>
+    <string name="tds">TDS</string>
+    <string name="water">Water</string>
+    <string name="ph">PH</string>
+</resources>
