@@ -8,15 +8,17 @@
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/fragment_chart.xml" value="0.1265625" />
-        <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/fragment_control.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/fragment_history.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/fragment_home.xml" value="0.25857275254865614" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/fragment_info.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/menu/nav_bottom.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/andri/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/activity_main.xml" value="0.536" />
+        <entry key="..\:/Users/andri/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/fragment_control.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/andri/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/fragment_home.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
