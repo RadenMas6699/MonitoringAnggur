@@ -6,10 +6,10 @@
         android:title="@string/home" />
     <item
         android:id="@+id/controlFragment"
-        android:icon="@drawable/ic_chart_outline"
+        android:icon="@drawable/ic_control_outline"
         android:title="@string/control" />
     <item
         android:id="@+id/infoFragment"
-        android:icon="@drawable/ic_info_outline"
+        android:icon="@drawable/ic_chart_outline"
         android:title="@string/info" />
 </menu>
