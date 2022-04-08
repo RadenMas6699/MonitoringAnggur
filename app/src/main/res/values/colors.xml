@@ -12,4 +12,47 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="dark_icon">#555555</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white_icon">#CCCCCC</color>
+
+    <color name="bg_white_blue">#F5F6FC</color>
+    <color name="semiTransparent">#80D5D5D5</color>
+    <color name="green">#8CC63E</color>
+    <color name="green_strong">#64DD17</color>
+    <color name="green_light">#A1CE69</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">@color/dark_icon</color>
+    <color name="dot_dark_screen2">@color/dark_icon</color>
+    <color name="dot_dark_screen3">@color/dark_icon</color>
+    <color name="dot_dark_screen4">@color/dark_icon</color>
+    <color name="dot_dark_screen5">@color/dark_icon</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">@color/green_strong</color>
+    <color name="dot_light_screen2">@color/green_strong</color>
+    <color name="dot_light_screen3">@color/green_strong</color>
+    <color name="dot_light_screen4">@color/green_strong</color>
+    <color name="dot_light_screen5">@color/green_strong</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+    </array>
 </resources>

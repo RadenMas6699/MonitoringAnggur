@@ -1,296 +1,291 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".ui.main.HomeFragment">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tvTime"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Selamat Malam 🌃"
-            android:textColor="@color/primary_text"
-            android:textSize="15sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tvTime"
-            android:layout_marginTop="2dp"
-            android:text="Andriansyah Anwar"
-            android:textColor="@color/primary_text"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat Malam"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="24dp"
-            android:gravity="end"
-            android:text="@string/home"
-            android:textColor="@color/primary_text"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTime"
+                android:layout_marginTop="4dp"
+                android:text="Andriansyah Anwar"
+                android:textColor="@color/primary_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:layout_marginHorizontal="46dp"
-        android:layout_marginTop="16dp"
-        app:cardCornerRadius="24dp">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="end"
+                android:text="@string/home"
+                android:textColor="@color/primary_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginHorizontal="46dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_grape_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/app_name"
+                        android:textColor="@color/primary_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="20dp"
+                    android:background="@color/secondary_text" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp">
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="8dp">
+            <androidx.cardview.widget.CardView
+                style="@style/card_item"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp">
 
-                <ImageView
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:src="@drawable/ic_grape_color" />
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
 
-                <TextView
+                    <ImageView
+                        style="@style/icon_item"
+                        android:src="@drawable/ic_grape_color" />
+
+                    <TextView
+                        android:id="@+id/title_temperature"
+                        style="@style/title_item"
+                        android:text="@string/temperature" />
+
+                    <TextView
+                        android:id="@+id/value_temperature"
+                        style="@style/value_item"
+                        android:text="@string/dash" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_item"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp">
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:lines="2"
-                    android:paddingHorizontal="16dp"
-                    android:text="@string/app_name"
-                    android:textColor="@color/primary_text"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
 
-            <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:layout_marginVertical="20dp"
-                android:background="@color/secondary_text" />
+                    <ImageView
+                        style="@style/icon_item"
+                        android:src="@drawable/ic_grape_color" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="8dp">
+                    <TextView
+                        android:id="@+id/title_humidity"
+                        style="@style/title_item"
+                        android:text="@string/humidity" />
 
+                    <TextView
+                        android:id="@+id/value_humidity"
+                        style="@style/value_item"
+                        android:text="@string/dash" />
 
-            </RelativeLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                style="@style/card_item"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp">
 
-                <androidx.cardview.widget.CardView
-                    style="@style/card_item"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="8dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp">
+                    <ImageView
+                        style="@style/icon_item"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_grape_color" />
 
-                        <ImageView
-                            style="@style/icon_item"
-                            android:src="@drawable/ic_grape_color" />
+                    <TextView
+                        style="@style/title_item"
+                        android:text="@string/soil" />
 
-                        <TextView
-                            android:id="@+id/title_temperature"
-                            style="@style/title_item"
-                            android:text="@string/temperature" />
+                    <TextView
+                        style="@style/value_item"
+                        android:text="@string/dash" />
 
-                        <TextView
-                            android:id="@+id/value_temperature"
-                            style="@style/value_item"
-                            android:text="@string/dash" />
+                </RelativeLayout>
 
-                    </RelativeLayout>
+            </androidx.cardview.widget.CardView>
 
-                </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                style="@style/card_item"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp">
 
-                <androidx.cardview.widget.CardView
-                    style="@style/card_item"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp">
+                    <ImageView
+                        style="@style/icon_item"
+                        android:src="@drawable/ic_grape_color" />
 
-                        <ImageView
-                            style="@style/icon_item"
-                            android:src="@drawable/ic_grape_color" />
+                    <TextView
+                        style="@style/title_item"
+                        android:text="@string/light" />
 
-                        <TextView
-                            android:id="@+id/title_humidity"
-                            style="@style/title_item"
-                            android:text="@string/humidity" />
+                    <TextView
+                        style="@style/value_item"
+                        android:text="@string/dash" />
 
-                        <TextView
-                            android:id="@+id/value_humidity"
-                            style="@style/value_item"
-                            android:text="@string/dash" />
+                </RelativeLayout>
 
-                    </RelativeLayout>
-
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    style="@style/card_item"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="8dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp">
-
-                        <ImageView
-                            style="@style/icon_item"
-                            android:padding="3dp"
-                            android:src="@drawable/ic_grape_color" />
-
-                        <TextView
-                            style="@style/title_item"
-                            android:text="@string/soil" />
-
-                        <TextView
-                            style="@style/value_item"
-                            android:text="@string/dash" />
-
-                    </RelativeLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    style="@style/card_item"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="16dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp">
-
-                        <ImageView
-                            style="@style/icon_item"
-                            android:src="@drawable/ic_grape_color" />
-
-                        <TextView
-                            style="@style/title_item"
-                            android:text="@string/light" />
-
-                        <TextView
-                            style="@style/value_item"
-                            android:text="@string/dash" />
-
-                    </RelativeLayout>
-
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    style="@style/card_item"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="8dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp">
-
-                        <ImageView
-                            style="@style/icon_item"
-                            android:padding="2dp"
-                            android:src="@drawable/ic_grape_color" />
-
-                        <TextView
-                            style="@style/title_item"
-                            android:text="@string/water" />
-
-                        <TextView
-                            style="@style/value_item"
-                            android:text="@string/dash" />
-
-                    </RelativeLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    style="@style/card_item"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="16dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp">
-
-                        <ImageView
-                            style="@style/icon_item"
-                            android:padding="2dp"
-                            android:src="@drawable/ic_grape_color" />
-
-                        <TextView
-                            style="@style/title_item"
-                            android:text="@string/pupuk" />
-
-                        <TextView
-                            style="@style/value_item"
-                            android:text="@string/dash" />
-
-                    </RelativeLayout>
-
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_item"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        style="@style/icon_item"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_grape_color" />
+
+                    <TextView
+                        style="@style/title_item"
+                        android:text="@string/water" />
+
+                    <TextView
+                        style="@style/value_item"
+                        android:text="@string/dash" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_item"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        style="@style/icon_item"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_grape_color" />
+
+                    <TextView
+                        style="@style/title_item"
+                        android:text="@string/pupuk" />
+
+                    <TextView
+                        style="@style/value_item"
+                        android:text="@string/dash" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

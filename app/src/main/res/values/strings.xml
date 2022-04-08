@@ -9,8 +9,10 @@
     <string name="soil">Kelembaban Tanah</string>
     <string name="light">Intensitas Cahaya</string>
     <string name="water">Volume Air</string>
-    <string name="pupuk">Volume Pupuk</string>
+    <string name="pupuk">Pupuk</string>
     <string name="lamp">Lampu</string>
     <string name="mist_maker">Mist Maker</string>
     <string name="water_pump">Water Pump</string>
+    <string name="pupukk">Volume Pupuk</string>
+
 </resources>
