@@ -14,6 +14,19 @@
     <string name="mist_maker">Mist Maker</string>
     <string name="water_pump">Water Pump</string>
     <string name="pupukk">Volume Pupuk</string>
+    <string name="date_and_time"><![CDATA[Date & Time]]></string>
+    <string name="carlos_name">Karolus Karen</string>
+    <string name="prodi_name">Program Studi Pendidikan Teknik Elektro</string>
+    <string name="major_name">Jurusan Pendidikan Teknik Elektro</string>
+    <string name="faculty_name">Fakultas Teknik</string>
+    <string name="campus_name">Universitas Negeri Makassar</string>
+    <string name="years">2021</string>
+    <string name="moisture">Moisture</string>
+    <string name="tds">TDS</string>
+    <string name="ph">PH</string>
+    <string name="bad">Buruk</string>
+    <string name="medium">Sedang</string>
+    <string name="good">Baik</string>
 
 
 </resources>

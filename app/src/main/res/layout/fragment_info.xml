@@ -52,7 +52,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_grape_color" />
+                    android:src="@drawable/ic_anggur" />
 
                 <TextView
                     android:layout_width="match_parent"
