@@ -18,6 +18,23 @@
         android:layout_marginBottom="16dp">
 
         <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Malam"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTime"
+            android:layout_marginTop="4dp"
+            android:text="Andriansyah Anwar"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,6 +96,61 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_calender"
+                    android:layout_marginTop="16dp" />
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="end"
+                    android:lines="2"
+                    android:text="@string/date_and_time"
+                    android:textColor="@color/dark_icon"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/img_clock"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="100dp"
+                    android:src="@drawable/ic_clock" />
+                <ImageView
+                    android:id="@+id/img_date"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/img_clock"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_calendar1"/>
+
+                <TextView
+                    android:id="@+id/value_clock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_date"
+                    android:layout_alignTop="@+id/img_clock"
+                    android:layout_alignBottom="@+id/img_clock"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/img_clock"
+                    android:text="@string/dash"
+                    android:textColor="@color/dark_icon"/>
+                <TextView
+                    android:id="@+id/value_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/img_date"
+                    android:layout_alignBottom="@+id/img_date"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/img_date"
+                    android:text="@string/dash"
+                    android:textColor="@color/dark_icon"/>
 
 
             </RelativeLayout>
