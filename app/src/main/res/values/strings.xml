@@ -27,6 +27,8 @@
     <string name="bad">Buruk</string>
     <string name="medium">Sedang</string>
     <string name="good">Baik</string>
+    <string name="malam">Selamat Malam</string>
+    <string name="pagi">Selamat Pagi</string>
 
 
 </resources>
