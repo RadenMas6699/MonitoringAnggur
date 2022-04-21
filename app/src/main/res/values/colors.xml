@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by RadenMas on 22/4/2022.
+  ~ Copyright (c) 2022.
+  -->
+
 <resources>
     <color name="primary">#6DD627</color>
     <color name="primary_dark">#57AA20</color>
