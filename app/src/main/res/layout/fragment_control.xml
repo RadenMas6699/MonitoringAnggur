@@ -1,178 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green"
     tools:context=".ui.main.ControlFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/bg_gradasi">
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp">
-
-        <TextView
-            android:id="@+id/tvTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Selamat Malam"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp"/>
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="2dp"
-            android:src="@drawable/ic_malam" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tvTime"
-            android:layout_marginTop="4dp"
-            android:text="Andriansyah Anwar"
-            android:textColor="@color/primary_text"
-            android:textSize="16sp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="24dp"
-            android:gravity="end"
-            android:text="@string/control"
-            android:textColor="@color/primary_text"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:layout_marginHorizontal="46dp"
-        android:layout_marginTop="16dp"
-        app:cardCornerRadius="24dp" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal" >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:src="@drawable/ic_anggur"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:lines="2"
-                    android:paddingHorizontal="16dp"
-                    android:text="Monitoring Anggur"
-                    android:textColor="@color/primary_text"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:layout_marginVertical="20dp"
-                android:background="@color/primary_text" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="8dp" >
-
-                <ImageView
-                    android:layout_width="52dp"
-                    android:layout_height="52dp"
-                    android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_calender"
-                    android:layout_marginTop="16dp" />
-                <TextView
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginEnd="12dp"
-                    android:gravity="end"
-                    android:lines="2"
-                    android:text="@string/date_and_time"
-                    android:textColor="@color/dark_icon"
-                    android:textStyle="bold" />
-                <ImageView
-                    android:id="@+id/img_clock"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="100dp"
-                    android:src="@drawable/ic_clock"/>
-                <ImageView
-                    android:id="@+id/img_date"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/img_clock"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:src="@drawable/ic_calendar1"/>
-
-                <TextView
-                    android:id="@+id/value_clock"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/img_date"
-                    android:layout_alignTop="@+id/img_clock"
-                    android:layout_alignBottom="@+id/img_clock"
-                    android:layout_marginStart="8dp"
-                    android:layout_toEndOf="@+id/img_clock"
-                    android:text="-"
-                    android:textColor="@color/dark_icon"/>
-
-                <TextView
-                    android:id="@+id/value_date"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/img_date"
-                    android:layout_alignBottom="@+id/img_date"
-                    android:layout_marginStart="8dp"
-                    android:layout_toEndOf="@+id/img_date"
-                    android:text="-"
-                    android:textColor="@color/dark_icon"/>
-            </RelativeLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+        android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="30dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:elevation="3dp"
@@ -180,7 +22,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -199,7 +42,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="24dp"
                     android:layout_marginBottom="14dp"
-                    android:src="@drawable/ic_lampu" />
+                    android:src="@drawable/ic_lamp_color" />
 
                 <com.google.android.material.switchmaterial.SwitchMaterial
                     android:layout_width="wrap_content"
@@ -223,7 +66,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -242,7 +86,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="24dp"
                     android:layout_marginBottom="14dp"
-                    android:src="@drawable/ic_mistmaker" />
+                    android:src="@drawable/ic_wind_color" />
 
                 <com.google.android.material.switchmaterial.SwitchMaterial
                     android:layout_width="wrap_content"
@@ -266,7 +110,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -285,7 +130,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="24dp"
                     android:layout_marginBottom="14dp"
-                    android:src="@drawable/ic_waterpump" />
+                    android:src="@drawable/ic_water_pump_color" />
 
                 <com.google.android.material.switchmaterial.SwitchMaterial
                     android:layout_width="wrap_content"
@@ -310,7 +155,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -329,7 +175,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="24dp"
                     android:layout_marginBottom="14dp"
-                    android:src="@drawable/ic_controlpupuk" />
+                    android:src="@drawable/ic_water_pump_2_color" />
 
                 <com.google.android.material.switchmaterial.SwitchMaterial
                     android:layout_width="wrap_content"
@@ -344,5 +190,5 @@
 
     </LinearLayout>
 
-</androidx.core.widget.NestedScrollView>
+</ScrollView>
 
