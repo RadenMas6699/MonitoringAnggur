@@ -28,7 +28,9 @@ class InfoFragment : Fragment() {
     }
 
     private fun onClick() {
-
+        b.tvDay.setOnClickListener { }
+        b.tvWeek.setOnClickListener { }
+        b.tvMonth.setOnClickListener { }
     }
 
     private fun initView() {

@@ -31,12 +31,11 @@
                         android:src="@drawable/ic_temperature_color" />
 
                     <TextView
-                        android:id="@+id/title_temperature"
                         style="@style/title_item"
                         android:text="@string/temperature" />
 
                     <TextView
-                        android:id="@+id/value_temperature"
+                        android:id="@+id/tvTemp"
                         style="@style/value_item"
                         android:text="\u2103" />
 
@@ -60,12 +59,11 @@
                         android:src="@drawable/ic_humidity_color" />
 
                     <TextView
-                        android:id="@+id/title_humidity"
                         style="@style/title_item"
                         android:text="@string/humidity" />
 
                     <TextView
-                        android:id="@+id/value_humidity"
+                        android:id="@+id/tvHum"
                         style="@style/value_item"
                         android:text="@string/dash" />
 
@@ -100,6 +98,7 @@
                         android:text="@string/soil" />
 
                     <TextView
+                        android:id="@+id/tvSoil"
                         style="@style/value_item"
                         android:text="@string/dash" />
 
@@ -127,6 +126,7 @@
                         android:text="@string/light" />
 
                     <TextView
+                        android:id="@+id/tvIntensity"
                         style="@style/value_item"
                         android:text="@string/dash" />
 
@@ -161,6 +161,7 @@
                         android:text="@string/water" />
 
                     <TextView
+                        android:id="@+id/tvWater"
                         style="@style/value_item"
                         android:text="@string/dash" />
 
@@ -189,6 +190,7 @@
                         android:text="@string/pupukk" />
 
                     <TextView
+                        android:id="@+id/tvFertilizer"
                         style="@style/value_item"
                         android:text="@string/dash" />
 

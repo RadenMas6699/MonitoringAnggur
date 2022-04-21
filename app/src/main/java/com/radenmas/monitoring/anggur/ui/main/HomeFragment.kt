@@ -22,13 +22,8 @@ class HomeFragment : Fragment() {
         val v = b.root
 
         initView()
-        onClick()
 
         return v
-    }
-
-    private fun onClick() {
-
     }
 
     private fun initView() {
