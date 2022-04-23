@@ -43,8 +43,11 @@ class ControlFragment : Fragment() {
     private fun onClick() {
         b.switchLamp.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                Toast.makeText(requireContext(), "Lampu On", Toast.LENGTH_SHORT).show()
-                stateLamp.setValue(1)
+                stateLamp.setValue(1).addOnSuccessListener {
+                    Toast.makeText(requireContext(), "Lampu On", Toast.LENGTH_SHORT).show()
+                }.addOnFailureListener {
+                    Toast.makeText(requireContext(), it.message.toString(), Toast.LENGTH_SHORT).show()
+                }
             } else {
                 Toast.makeText(requireContext(), "Lampu Off", Toast.LENGTH_SHORT).show()
                 stateLamp.setValue(0)

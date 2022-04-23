@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "769726788588",
+    "firebase_url": "https://monitoring-anggur-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "monitoring-anggur",
     "storage_bucket": "monitoring-anggur.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:769726788588:android:2e29724a76d605aab346c9",
+        "mobilesdk_app_id": "1:769726788588:android:e39d24b2c8e99b21b346c9",
         "android_client_info": {
           "package_name": "com.radenmas.monitoring.anggur"
         }
