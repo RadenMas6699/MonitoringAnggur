@@ -174,7 +174,7 @@
     </androidx.cardview.widget.CardView>
 
     <fragment
-        android:id="@+id/fragmentT"
+        android:id="@+id/fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
