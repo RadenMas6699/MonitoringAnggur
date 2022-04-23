@@ -10,6 +10,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import com.radenmas.monitoring.anggur.databinding.FragmentControlBinding
 
 /**
@@ -33,7 +35,14 @@ class ControlFragment : Fragment() {
     }
 
     private fun onClick() {
-
+        b.switchLamp.setOnCheckedChangeListener { _, isChecked ->
+            val stateLamp = Firebase.database.getReference("lamp")
+            if (isChecked) {
+                stateLamp.setValue(1)
+            } else {
+                stateLamp.setValue(0)
+            }
+        }
     }
 
     private fun initView() {
