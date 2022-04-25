@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         when (dt.hours) {
             in 1..10 -> {
                 b.tvTime.text = "Selamat Pagi"
-                b.imgTime.setImageResource(R.drawable.ic_siang)
+                b.imgTime.setImageResource(R.drawable.ic_pagi)
             }
             in 11..14 -> {
                 b.tvTime.text = "Selamat Siang"
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             }
             in 15..18 -> {
                 b.tvTime.text = "Selamat Sore"
-                b.imgTime.setImageResource(R.drawable.ic_siang)
+                b.imgTime.setImageResource(R.drawable.ic_sore)
             }
             in 19..24 -> {
                 b.tvTime.text = "Selamat Malam"
