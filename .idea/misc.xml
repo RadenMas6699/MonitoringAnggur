@@ -16,7 +16,7 @@
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/drawable/ic_info_outline.xml" value="0.1655" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/drawable/ic_kelembabant_tanah.xml" value="0.1655" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/drawable/ic_temperature_color.xml" value="0.1655" />
-        <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/activity_main.xml" value="0.1745454484923814" />
+        <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/activity_main.xml" value="1.0" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/fragment_chart.xml" value="0.1265625" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/layout/fragment_control.xml" value="0.2638888888888889" />
@@ -54,7 +54,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

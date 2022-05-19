@@ -43,8 +43,7 @@
 
                     <TextView
                         android:id="@+id/tvTemp"
-                        style="@style/value_item"
-                        android:text="\u2103" />
+                        style="@style/value_item"/>
 
                 </RelativeLayout>
 

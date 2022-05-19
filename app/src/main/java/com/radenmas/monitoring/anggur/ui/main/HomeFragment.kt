@@ -10,7 +10,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import com.radenmas.monitoring.anggur.databinding.FragmentHomeBinding
+import java.text.SimpleDateFormat
 
 /**
  * Created by RadenMas on 17/03/2022.
@@ -33,5 +38,29 @@ class HomeFragment : Fragment() {
 
     private fun initView() {
 
+        FirebaseDatabase.getInstance().getReference("monitoring").limitToLast(1)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    for (snapshot in snapshot.children) {
+                        val temp = snapshot.child("temp").value.toString()
+                        val hum = snapshot.child("hum").value.toString()
+                        val soil = snapshot.child("soil").value.toString()
+                        val cahaya = snapshot.child("cahaya").value.toString()
+                        val water = snapshot.child("water").value.toString()
+                        val nutrisi = snapshot.child("nutrisi").value.toString()
+
+                        b.tvTemp.text = "$temp \u2103"
+                        b.tvHum.text = "$hum %"
+                        b.tvSoil.text = "$soil %"
+                        b.tvIntensity.text = cahaya
+                        b.tvWater.text = "$water m3"
+                        b.tvFertilizer.text = "$nutrisi m3"
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+
+                }
+            })
     }
 }

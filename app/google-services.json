@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "769726788588",
-    "firebase_url": "https://monitoring-anggur-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "monitoring-anggur",
-    "storage_bucket": "monitoring-anggur.appspot.com"
+    "project_number": "255009097870",
+    "firebase_url": "https://monitoring-anggur-b8315-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "monitoring-anggur-b8315",
+    "storage_bucket": "monitoring-anggur-b8315.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:769726788588:android:e39d24b2c8e99b21b346c9",
+        "mobilesdk_app_id": "1:255009097870:android:67309ac6599d13295ee1df",
         "android_client_info": {
           "package_name": "com.radenmas.monitoring.anggur"
         }
       },
       "oauth_client": [
         {
-          "client_id": "769726788588-bsqnsed93munpsv90dq7b2nn7fejf0ru.apps.googleusercontent.com",
+          "client_id": "255009097870-akj4m39kurlpbvq479vo82mpsv91p1g8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD28TY_rlCRBQTXiZyhzD45itAyD90FB78"
+          "current_key": "AIzaSyCBd3TA4Yg9k_w_H96hXSYuxyflNc9z6nU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "769726788588-bsqnsed93munpsv90dq7b2nn7fejf0ru.apps.googleusercontent.com",
+              "client_id": "255009097870-akj4m39kurlpbvq479vo82mpsv91p1g8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

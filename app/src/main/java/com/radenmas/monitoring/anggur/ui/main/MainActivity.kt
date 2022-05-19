@@ -9,14 +9,16 @@ import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.NavController
-import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import com.radenmas.monitoring.anggur.R
 import com.radenmas.monitoring.anggur.databinding.ActivityMainBinding
+import java.text.SimpleDateFormat
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -52,6 +54,27 @@ class MainActivity : AppCompatActivity() {
                 b.imgTime.setImageResource(R.drawable.ic_malam)
             }
         }
+
+        FirebaseDatabase.getInstance().reference.child("monitoring").limitToLast(1)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    for (snapshot in snapshot.children) {
+                        val time = snapshot.child("time").value.toString().toLong()
+
+                        val date = Date(time)
+                        val formatDate = SimpleDateFormat("dd MMM yyyy")
+                        val formatClock = SimpleDateFormat("HH:mm")
+
+                        b.tvDate.text = formatDate.format(date)
+                        b.tvClock.text = formatClock.format(date)
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+
+                }
+            })
+
 
         val navController = findNavController(R.id.fragment)
         b.navBottom.setupWithNavController(navController)
