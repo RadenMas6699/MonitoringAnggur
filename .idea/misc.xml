@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/drawable/bg_button_selected.xml" value="0.2555" />
+        <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/drawable/bg_button_unselected.xml" value="0.2555" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/drawable/bg_gradasi.xml" value="0.1655" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/drawable/bg_gradient.xml" value="0.1625" />
         <entry key="..\:/AndroidStudioProjects/MonitoringAnggur/app/src/main/res/drawable/bg_value_green.xml" value="0.1655" />

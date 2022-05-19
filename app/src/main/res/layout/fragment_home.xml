@@ -43,7 +43,8 @@
 
                     <TextView
                         android:id="@+id/tvTemp"
-                        style="@style/value_item"/>
+                        style="@style/value_item"
+                        android:text="@string/dash" />
 
                 </RelativeLayout>
 
@@ -71,7 +72,7 @@
                     <TextView
                         android:id="@+id/tvHum"
                         style="@style/value_item"
-                        android:text="%" />
+                        android:text="@string/dash" />
 
                 </RelativeLayout>
 
