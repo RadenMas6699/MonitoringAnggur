@@ -15,7 +15,6 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.radenmas.monitoring.anggur.databinding.FragmentHomeBinding
-import java.text.SimpleDateFormat
 
 /**
  * Created by RadenMas on 17/03/2022.
@@ -52,7 +51,7 @@ class HomeFragment : Fragment() {
                         b.tvTemp.text = "$temp \u2103"
                         b.tvHum.text = "$hum %"
                         b.tvSoil.text = "$soil %"
-                        b.tvIntensity.text = cahaya
+                        b.tvIntensity.text = "$cahaya %"
                         b.tvWater.text = "$water m3"
                         b.tvFertilizer.text = "$nutrisi m3"
                     }

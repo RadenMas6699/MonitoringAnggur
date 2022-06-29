@@ -8,7 +8,8 @@
     <string name="dev_name">Andriansyah Anwar</string>
     <string name="home">Home</string>
     <string name="control">Control</string>
-    <string name="info">Info</string>
+    <string name="grafik">Grafik</string>
+    <string name="tentang">Tentang</string>
     <string name="dash">-</string>
     <string name="temperature">Temperature</string>
     <string name="humidity">Humidity</string>

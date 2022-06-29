@@ -162,7 +162,7 @@
                     <ImageView
                         style="@style/icon_item"
                         android:padding="2dp"
-                        android:src="@drawable/ic_volume_water" />
+                        android:src="@drawable/ic_vlm" />
 
                     <TextView
                         style="@style/title_item"
@@ -191,7 +191,7 @@
                     <ImageView
                         style="@style/icon_item"
                         android:padding="2dp"
-                        android:src="@drawable/ic_volume_water" />
+                        android:src="@drawable/ic_vlm" />
 
                     <TextView
                         style="@style/title_item"

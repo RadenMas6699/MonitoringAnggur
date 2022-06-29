@@ -19,9 +19,13 @@
         android:name="com.radenmas.monitoring.anggur.ui.main.ControlFragment"
         android:label="@string/control"
         tools:layout="@layout/fragment_control" />
-    <fragment
-        android:id="@+id/infoFragment"
-        android:name="com.radenmas.monitoring.anggur.ui.main.InfoFragment"
-        android:label="@string/info"
-        tools:layout="@layout/fragment_info" />
+<!--    <fragment-->
+<!--        android:id="@+id/grafikFragment"-->
+<!--        android:name="com.radenmas.monitoring.anggur.ui.main.GrafikFragment"-->
+<!--        android:label="@string/grafik"-->
+<!--        tools:layout="@layout/fragment_grafik" />-->
+    <fragment android:id="@+id/tentangFragment"
+        android:name="com.radenmas.monitoring.anggur.ui.main.TentangFragment"
+        android:label="@string/tentang"
+        tools:layout="@layout/fragment_tentang"/>
 </navigation>
