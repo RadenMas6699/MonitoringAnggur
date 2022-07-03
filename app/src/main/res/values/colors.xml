@@ -12,6 +12,7 @@
     <color name="secondary_dark">#803EC2</color>
     <color name="secondary_light">#BF8DF2</color>
     <color name="accent">#FF9800</color>
+    <color name="red">#950000</color>
     <color name="primary_text">#212226</color>
     <color name="secondary_text">#757575</color>
     <color name="black">#000000</color>

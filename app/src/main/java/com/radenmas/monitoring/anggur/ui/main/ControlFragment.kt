@@ -43,54 +43,29 @@ class ControlFragment : Fragment() {
     private fun onClick() {
         b.switchLamp.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                stateLamp.setValue(1).addOnSuccessListener {
-                    Toast.makeText(requireContext(), "Lampu On", Toast.LENGTH_SHORT).show()
-                }.addOnFailureListener {
-                    Toast.makeText(requireContext(), it.message.toString(), Toast.LENGTH_SHORT)
-                        .show()
-                }
+                stateLamp.setValue(1)
             } else {
-                Toast.makeText(requireContext(), "Lampu Off", Toast.LENGTH_SHORT).show()
                 stateLamp.setValue(0)
             }
         }
         b.switchMistMaker.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                stateMistMaker.setValue(1).addOnCanceledListener {
-                    Toast.makeText(requireContext(), "Mist Maker On", Toast.LENGTH_SHORT).show()
-                }.addOnFailureListener() {
-                    Toast.makeText(requireContext(), it.message.toString(), Toast.LENGTH_SHORT)
-                        .show()
-                }
+                stateMistMaker.setValue(1)
             } else {
-                Toast.makeText(requireContext(), "Mist Maker Off", Toast.LENGTH_SHORT).show()
                 stateMistMaker.setValue(0)
             }
         }
         b.switchWaterPump.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                stateWaterPump.setValue(1).addOnSuccessListener {
-                    Toast.makeText(requireContext(), "Water Pump On", Toast.LENGTH_SHORT).show()
-                }.addOnFailureListener {
-                    Toast.makeText(requireContext(), it.message.toString(), Toast.LENGTH_SHORT)
-                        .show()
-                }
+                stateWaterPump.setValue(1)
             } else {
-                Toast.makeText(requireContext(), "Water Pump Off", Toast.LENGTH_SHORT).show()
                 stateWaterPump.setValue(0)
             }
-
         }
         b.switchFertilizer.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                statePupuk.setValue(1).addOnSuccessListener {
-                    Toast.makeText(requireContext(), "Nutrisi Pump On", Toast.LENGTH_SHORT).show()
-                }.addOnFailureListener {
-                    Toast.makeText(requireContext(), it.message.toString(), Toast.LENGTH_SHORT)
-                        .show()
-                }
+                statePupuk.setValue(1)
             } else {
-                Toast.makeText(requireContext(), "Nutrisi Pump Off", Toast.LENGTH_SHORT).show()
                 statePupuk.setValue(0)
             }
         }

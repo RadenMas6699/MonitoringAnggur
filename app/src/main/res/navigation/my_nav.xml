@@ -20,13 +20,13 @@
         android:label="@string/control"
         tools:layout="@layout/fragment_control" />
     <fragment
-        android:id="@+id/infoFragment"
-        android:name="com.radenmas.monitoring.anggur.ui.main.InfoFragment"
-        android:label="@string/info"
-        tools:layout="@layout/fragment_info" />
+        android:id="@+id/graphFragment"
+        android:name="com.radenmas.monitoring.anggur.ui.main.GraphFragment"
+        android:label="@string/graph"
+        tools:layout="@layout/fragment_graph" />
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.radenmas.monitoring.anggur.AboutFragment"
+        android:name="com.radenmas.monitoring.anggur.ui.main.AboutFragment"
         android:label="@string/about"
         tools:layout="@layout/fragment_about" />
 </navigation>

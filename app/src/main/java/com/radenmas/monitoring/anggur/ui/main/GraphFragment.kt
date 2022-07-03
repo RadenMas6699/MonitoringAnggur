@@ -14,32 +14,28 @@ import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import com.radenmas.monitoring.anggur.R
-import com.radenmas.monitoring.anggur.databinding.FragmentGrafikBinding
+import com.radenmas.monitoring.anggur.databinding.FragmentGraphBinding
 
 /**
  * Created by RadenMas on 17/03/2022.
  */
-class GrafikFragment : Fragment() {
+class GraphFragment : Fragment() {
 
 
-    private lateinit var b: FragmentGrafikBinding
+    private lateinit var b: FragmentGraphBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        b = FragmentGrafikBinding.inflate(layoutInflater, container, false)
+        b = FragmentGraphBinding.inflate(layoutInflater, container, false)
         val v = b.root
 
         initView()
         onClick()
 
-
         return v
-
-
     }
-
 
     private fun onClick() {
         b.tvTemp.setOnClickListener {

@@ -9,7 +9,7 @@
     <string name="dev_name">Andriansyah Anwar</string>
     <string name="home">Home</string>
     <string name="control">Control</string>
-    <string name="info">Info</string>
+    <string name="graph">Grafik</string>
     <string name="about">Tentang</string>
     <string name="dash">-</string>
     <string name="temperature">Temperature</string>
@@ -39,6 +39,7 @@
     <string name="pagi">Selamat Pagi</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_about">Anggur Brazil mempunyai nama ilmiah <i>Jaboticaba</i> dan merupakan tanaman buah yang berasal dari Amerika Latin seperti Brasil, Bolivia, Paraguay, dan Argentina.Orang Indonesia menyebutnya sebagai Anggur Brazil. Berbeda dari umumnya tanaman Anggur yang ada di Indonesia, Anggur Brazil memiliki karakter berbuah yang unik, Anggur tidak berbuah pada batangnya tapi membutuhkan batang pohonnya yang kokoh sebagai media penopang buahnya.</string>
 
 
 </resources>

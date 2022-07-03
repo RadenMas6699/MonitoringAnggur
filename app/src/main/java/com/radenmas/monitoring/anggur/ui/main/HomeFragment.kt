@@ -14,6 +14,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.radenmas.monitoring.anggur.R
 import com.radenmas.monitoring.anggur.databinding.FragmentHomeBinding
 
 /**
@@ -47,11 +48,44 @@ class HomeFragment : Fragment() {
                         val cahaya = snapshot.child("cahaya").value.toString()
                         val water = snapshot.child("water").value.toString()
 
+                        if (temp.toInt() in 25..30) {
+                            b.tvTemp.background = resources.getDrawable(R.drawable.bg_value_green)
+                        } else {
+                            b.tvTemp.background = resources.getDrawable(R.drawable.bg_value_red)
+                        }
+
+                        if (hum.toInt() in 70..80) {
+                            b.tvHum.background = resources.getDrawable(R.drawable.bg_value_green)
+                        } else {
+                            b.tvHum.background = resources.getDrawable(R.drawable.bg_value_red)
+                        }
+
+//                        if (soil.toInt() in 25..30) {
+//                            b.tvTemp.background = resources.getDrawable(R.drawable.bg_value_green)
+//                        } else {
+//                            b.tvTemp.background = resources.getDrawable(R.drawable.bg_value_red)
+//                        }
+                        b.tvSoil.background = resources.getDrawable(R.drawable.bg_value_green)
+
+                        if (cahaya.toInt() in 50..80) {
+                            b.tvIntensity.background =
+                                resources.getDrawable(R.drawable.bg_value_green)
+                        } else {
+                            b.tvIntensity.background =
+                                resources.getDrawable(R.drawable.bg_value_red)
+                        }
+
+                        if (water.toInt() in 25..30) {
+                            b.tvWater.background = resources.getDrawable(R.drawable.bg_value_green)
+                        } else {
+                            b.tvWater.background = resources.getDrawable(R.drawable.bg_value_red)
+                        }
+
                         b.tvTemp.text = "$temp \u2103"
                         b.tvHum.text = "$hum %"
-                        b.tvSoil.text = "$soil %"
+                        b.tvSoil.text = soil
                         b.tvIntensity.text = "$cahaya %"
-                        b.tvWater.text = "$water m3"
+                        b.tvWater.text = water
                     }
                 }
 
