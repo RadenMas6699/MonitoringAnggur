@@ -16,29 +16,17 @@
     <string name="humidity">Humidity</string>
     <string name="soil">Kelembaban Tanah</string>
     <string name="light">Intensitas Cahaya</string>
-    <string name="water">Volume Air</string>
+    <string name="water">Ketinggian Air</string>
     <string name="pupuk">Pupuk</string>
     <string name="lamp">Lampu</string>
     <string name="mist_maker">Mist Maker</string>
     <string name="water_pump">Water Pump</string>
     <string name="pupukk">Volume Pupuk</string>
-    <string name="date_and_time"><![CDATA[Date & Time]]></string>
-    <string name="carlos_name">Karolus Karen</string>
-    <string name="prodi_name">Program Studi Pendidikan Teknik Elektro</string>
-    <string name="major_name">Jurusan Pendidikan Teknik Elektro</string>
-    <string name="faculty_name">Fakultas Teknik</string>
-    <string name="campus_name">Universitas Negeri Makassar</string>
-    <string name="years">2021</string>
-    <string name="moisture">Moisture</string>
-    <string name="tds">TDS</string>
-    <string name="ph">PH</string>
     <string name="bad">Buruk</string>
     <string name="medium">Sedang</string>
     <string name="good">Baik</string>
     <string name="malam">Selamat Malam</string>
     <string name="pagi">Selamat Pagi</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_about">Anggur Brazil mempunyai nama ilmiah <i>Jaboticaba</i> dan merupakan tanaman buah yang berasal dari Amerika Latin seperti Brasil, Bolivia, Paraguay, dan Argentina.Orang Indonesia menyebutnya sebagai Anggur Brazil. Berbeda dari umumnya tanaman Anggur yang ada di Indonesia, Anggur Brazil memiliki karakter berbuah yang unik, Anggur tidak berbuah pada batangnya tapi membutuhkan batang pohonnya yang kokoh sebagai media penopang buahnya.</string>
 
 

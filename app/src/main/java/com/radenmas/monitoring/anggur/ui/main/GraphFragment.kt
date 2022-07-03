@@ -50,25 +50,29 @@ class GraphFragment : Fragment() {
 
     private fun onClick() {
         b.tvTemp.setOnClickListener {
-            clicked(b.tvTemp, b.tvHum, b.tvSoil, b.tvLight)
+            clicked(b.tvTemp, b.tvHum, b.tvSoil, b.tvLight, b.tvWater)
             getTemp()
         }
         b.tvHum.setOnClickListener {
-            clicked(b.tvHum, b.tvTemp, b.tvSoil, b.tvLight)
+            clicked(b.tvHum, b.tvTemp, b.tvSoil, b.tvLight, b.tvWater)
             getHum()
         }
         b.tvSoil.setOnClickListener {
-            clicked(b.tvSoil, b.tvHum, b.tvTemp, b.tvLight)
+            clicked(b.tvSoil, b.tvHum, b.tvTemp, b.tvLight, b.tvWater)
             getSoil()
         }
         b.tvLight.setOnClickListener {
-            clicked(b.tvLight, b.tvHum, b.tvSoil, b.tvTemp)
+            clicked(b.tvLight, b.tvHum, b.tvSoil, b.tvTemp, b.tvWater)
             getLight()
+        }
+        b.tvWater.setOnClickListener {
+            clicked(b.tvWater, b.tvHum, b.tvSoil, b.tvLight, b.tvTemp)
+            getWater()
         }
     }
 
     private fun initView() {
-        clicked(b.tvTemp, b.tvHum, b.tvSoil, b.tvLight)
+        clicked(b.tvTemp, b.tvHum, b.tvSoil, b.tvLight, b.tvWater)
         getTemp()
     }
 
@@ -177,7 +181,13 @@ class GraphFragment : Fragment() {
             })
     }
 
-    private fun clicked(tvOn: TextView, tvOff1: TextView, tvOff2: TextView, tvOff3: TextView) {
+    private fun clicked(
+        tvOn: TextView,
+        tvOff1: TextView,
+        tvOff2: TextView,
+        tvOff3: TextView,
+        tvOff4: TextView
+    ) {
         tvOn.setTextColor(ResourcesCompat.getColor(resources, R.color.primary_text, null))
         tvOn.setTypeface(null, Typeface.BOLD)
         tvOn.setBackgroundResource(R.drawable.bg_button_selected)
@@ -193,6 +203,10 @@ class GraphFragment : Fragment() {
         tvOff3.setTextColor(ResourcesCompat.getColor(resources, R.color.secondary_text, null))
         tvOff3.setTypeface(null, Typeface.NORMAL)
         tvOff3.setBackgroundResource(R.drawable.bg_button_unselected)
+
+        tvOff4.setTextColor(ResourcesCompat.getColor(resources, R.color.secondary_text, null))
+        tvOff4.setTypeface(null, Typeface.NORMAL)
+        tvOff4.setBackgroundResource(R.drawable.bg_button_unselected)
     }
 
     fun chart(lineChart: LineChart, values: ArrayList<Entry>, min: Int, max: Int) {
