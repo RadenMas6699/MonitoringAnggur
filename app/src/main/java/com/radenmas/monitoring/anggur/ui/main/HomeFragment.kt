@@ -47,14 +47,12 @@ class HomeFragment : Fragment() {
                         val soil = snapshot.child("soil").value.toString()
                         val cahaya = snapshot.child("cahaya").value.toString()
                         val water = snapshot.child("water").value.toString()
-                        val nutrisi = snapshot.child("nutrisi").value.toString()
 
                         b.tvTemp.text = "$temp \u2103"
                         b.tvHum.text = "$hum %"
                         b.tvSoil.text = "$soil %"
                         b.tvIntensity.text = cahaya
                         b.tvWater.text = "$water m3"
-                        b.tvFertilizer.text = "$nutrisi m3"
                     }
                 }
 

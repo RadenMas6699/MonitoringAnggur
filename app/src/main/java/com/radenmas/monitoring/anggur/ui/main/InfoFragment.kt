@@ -37,22 +37,25 @@ class InfoFragment : Fragment() {
     }
 
     private fun onClick() {
-        b.tvDay.setOnClickListener {
-            clicked(b.tvDay, b.tvWeek, b.tvMonth)
+        b.tvTemp.setOnClickListener {
+            clicked(b.tvTemp, b.tvHum, b.tvSoil, b.tvLight)
         }
-        b.tvWeek.setOnClickListener {
-            clicked(b.tvWeek, b.tvDay, b.tvMonth)
+        b.tvHum.setOnClickListener {
+            clicked(b.tvHum, b.tvTemp, b.tvSoil, b.tvLight)
         }
-        b.tvMonth.setOnClickListener {
-            clicked(b.tvMonth, b.tvWeek, b.tvDay)
+        b.tvSoil.setOnClickListener {
+            clicked(b.tvSoil, b.tvHum, b.tvTemp, b.tvLight)
+        }
+        b.tvLight.setOnClickListener {
+            clicked(b.tvLight, b.tvHum, b.tvSoil, b.tvTemp)
         }
     }
 
     private fun initView() {
-        clicked(b.tvDay, b.tvWeek, b.tvMonth)
+        clicked(b.tvTemp, b.tvHum, b.tvSoil, b.tvLight)
     }
 
-    private fun clicked(tvOn: TextView, tvOff1: TextView, tvOff2: TextView) {
+    private fun clicked(tvOn: TextView, tvOff1: TextView, tvOff2: TextView, tvOff3: TextView) {
         tvOn.setTextColor(ResourcesCompat.getColor(resources, R.color.primary_text, null))
         tvOn.setTypeface(null, Typeface.BOLD)
         tvOn.setBackgroundResource(R.drawable.bg_button_selected)
@@ -64,5 +67,9 @@ class InfoFragment : Fragment() {
         tvOff2.setTextColor(ResourcesCompat.getColor(resources, R.color.secondary_text, null))
         tvOff2.setTypeface(null, Typeface.NORMAL)
         tvOff2.setBackgroundResource(R.drawable.bg_button_unselected)
+
+        tvOff3.setTextColor(ResourcesCompat.getColor(resources, R.color.secondary_text, null))
+        tvOff3.setTypeface(null, Typeface.NORMAL)
+        tvOff3.setBackgroundResource(R.drawable.bg_button_unselected)
     }
 }

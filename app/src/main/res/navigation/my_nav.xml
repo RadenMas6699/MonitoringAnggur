@@ -24,4 +24,9 @@
         android:name="com.radenmas.monitoring.anggur.ui.main.InfoFragment"
         android:label="@string/info"
         tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.radenmas.monitoring.anggur.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
 </navigation>

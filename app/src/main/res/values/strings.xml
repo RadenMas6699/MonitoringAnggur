@@ -10,6 +10,7 @@
     <string name="home">Home</string>
     <string name="control">Control</string>
     <string name="info">Info</string>
+    <string name="about">Tentang</string>
     <string name="dash">-</string>
     <string name="temperature">Temperature</string>
     <string name="humidity">Humidity</string>
@@ -36,6 +37,8 @@
     <string name="good">Baik</string>
     <string name="malam">Selamat Malam</string>
     <string name="pagi">Selamat Pagi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

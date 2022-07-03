@@ -10,52 +10,61 @@
     android:orientation="vertical"
     tools:context=".ui.main.InfoFragment">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <HorizontalScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:scrollbars="none">
 
-        <TextView
-            android:id="@+id/tvDay"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:foreground="?attr/selectableItemBackground"
-            android:gravity="center"
-            android:paddingHorizontal="28dp"
-            android:paddingVertical="10dp"
-            android:text="1 Hari" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tvWeek"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="12dp"
-            android:layout_weight="1"
-            android:foreground="?attr/selectableItemBackground"
-            android:gravity="center"
-            android:paddingHorizontal="28dp"
-            android:paddingVertical="10dp"
-            android:text="1 Minggu" />
+            <TextView
+                android:id="@+id/tvTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="10dp"
+                android:text="@string/temperature" />
 
-        <TextView
-            android:id="@+id/tvMonth"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:foreground="?attr/selectableItemBackground"
-            android:gravity="center"
-            android:paddingHorizontal="28dp"
-            android:paddingVertical="10dp"
-            android:text="1 Bulan" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tvHum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="10dp"
+                android:text="@string/humidity" />
+
+            <TextView
+                android:id="@+id/tvSoil"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="10dp"
+                android:text="@string/soil" />
+
+            <TextView
+                android:id="@+id/tvLight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="10dp"
+                android:text="@string/light" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
 
     <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/chartTemp"
+        android:id="@+id/chart"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="16dp" />
