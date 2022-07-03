@@ -13,8 +13,12 @@
         android:id="@+id/controlFragment"
         android:icon="@drawable/ic_control_outline"
         android:title="@string/control" />
+<!--    <item-->
+<!--        android:id="@+id/grafikFragment"-->
+<!--        android:icon="@drawable/ic_chart_outline"-->
+<!--        android:title="@string/grafik" />-->
     <item
-        android:id="@+id/infoFragment"
-        android:icon="@drawable/ic_chart_outline"
-        android:title="@string/info" />
+        android:id="@+id/tentangFragment"
+        android:icon="@drawable/ic_tentang"
+        android:title="@string/tentang" />
 </menu>

@@ -14,27 +14,32 @@ import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import com.radenmas.monitoring.anggur.R
-import com.radenmas.monitoring.anggur.databinding.FragmentInfoBinding
+import com.radenmas.monitoring.anggur.databinding.FragmentGrafikBinding
 
 /**
  * Created by RadenMas on 17/03/2022.
  */
-class InfoFragment : Fragment() {
+class GrafikFragment : Fragment() {
 
-    private lateinit var b: FragmentInfoBinding
+
+    private lateinit var b: FragmentGrafikBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        b = FragmentInfoBinding.inflate(layoutInflater, container, false)
+        b = FragmentGrafikBinding.inflate(layoutInflater, container, false)
         val v = b.root
 
         initView()
         onClick()
 
+
         return v
+
+
     }
+
 
     private fun onClick() {
         b.tvTemp.setOnClickListener {
@@ -72,4 +77,6 @@ class InfoFragment : Fragment() {
         tvOff3.setTypeface(null, Typeface.NORMAL)
         tvOff3.setBackgroundResource(R.drawable.bg_button_unselected)
     }
+
+
 }
