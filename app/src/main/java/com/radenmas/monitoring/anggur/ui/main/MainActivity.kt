@@ -55,19 +55,17 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        FirebaseDatabase.getInstance().reference.child("monitoring").limitToLast(1)
+        FirebaseDatabase.getInstance().reference.child("realtime")
             .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
-                    for (snapshot in snapshot.children) {
-                        val time = snapshot.child("time").value.toString().toLong()
+                    val time = snapshot.child("time").value.toString().toLong()
 
-                        val date = Date(time * 1000)
-                        val formatDate = SimpleDateFormat("dd MMM yyyy")
-                        val formatClock = SimpleDateFormat("HH:mm")
+                    val date = Date(time)
+                    val formatDate = SimpleDateFormat("dd MMM yyyy")
+                    val formatClock = SimpleDateFormat("HH:mm")
 
-                        b.tvDate.text = formatDate.format(date)
-                        b.tvClock.text = formatClock.format(date)
-                    }
+                    b.tvDate.text = formatDate.format(date)
+                    b.tvClock.text = formatClock.format(date)
                 }
 
                 override fun onCancelled(error: DatabaseError) {

@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -38,60 +39,42 @@ class HomeFragment : Fragment() {
 
     private fun initView() {
 
-        FirebaseDatabase.getInstance().getReference("monitoring").limitToLast(1)
+        FirebaseDatabase.getInstance().getReference("realtime")
             .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
-                    for (snapshot in snapshot.children) {
-                        val temp = snapshot.child("temp").value.toString()
-                        val hum = snapshot.child("hum").value.toString()
-                        val soil = snapshot.child("soil").value.toString()
-                        val cahaya = snapshot.child("cahaya").value.toString()
-                        val water = snapshot.child("water").value.toString()
+                    val temp = snapshot.child("temp").value.toString().toFloat().toInt()
+                    val hum = snapshot.child("hum").value.toString().toInt()
+                    val soil = snapshot.child("soil").value.toString().toInt()
+                    val cahaya = snapshot.child("cahaya").value.toString().toInt()
+                    val water = snapshot.child("water").value.toString().toInt()
 
-                        if (temp.toInt() in 25..30) {
-                            b.tvTemp.background = resources.getDrawable(R.drawable.bg_value_green)
-                        } else {
-                            b.tvTemp.background = resources.getDrawable(R.drawable.bg_value_red)
-                        }
+                    setBackgroundText(b.tvTemp, temp, 25, 30)
+                    setBackgroundText(b.tvHum, hum, 70, 80)
+//                    setBackgroundText(b.tvSoil, intSoil, 50, 80)
+                    setBackgroundText(b.tvIntensity, cahaya, 50, 80)
+                    setBackgroundText(b.tvWater, water, 25, 30)
 
-                        if (hum.toInt() in 70..80) {
-                            b.tvHum.background = resources.getDrawable(R.drawable.bg_value_green)
-                        } else {
-                            b.tvHum.background = resources.getDrawable(R.drawable.bg_value_red)
-                        }
-
-//                        if (soil.toInt() in 25..30) {
-//                            b.tvTemp.background = resources.getDrawable(R.drawable.bg_value_green)
-//                        } else {
-//                            b.tvTemp.background = resources.getDrawable(R.drawable.bg_value_red)
-//                        }
-                        b.tvSoil.background = resources.getDrawable(R.drawable.bg_value_green)
-
-                        if (cahaya.toInt() in 50..80) {
-                            b.tvIntensity.background =
-                                resources.getDrawable(R.drawable.bg_value_green)
-                        } else {
-                            b.tvIntensity.background =
-                                resources.getDrawable(R.drawable.bg_value_red)
-                        }
-
-                        if (water.toInt() in 25..30) {
-                            b.tvWater.background = resources.getDrawable(R.drawable.bg_value_green)
-                        } else {
-                            b.tvWater.background = resources.getDrawable(R.drawable.bg_value_red)
-                        }
-
-                        b.tvTemp.text = "$temp \u2103"
-                        b.tvHum.text = "$hum %"
-                        b.tvSoil.text = soil
-                        b.tvIntensity.text = "$cahaya %"
-                        b.tvWater.text = water
-                    }
+                    b.tvTemp.text = "$temp \u2103"
+                    b.tvHum.text = "$hum %"
+                    b.tvSoil.text = "$soil"
+                    b.tvIntensity.text = "$cahaya %"
+                    b.tvWater.text = "$water"
                 }
 
                 override fun onCancelled(error: DatabaseError) {
 
                 }
             })
+    }
+
+    fun setBackgroundText(textView: TextView, value: Int, low: Int, high: Int) {
+        when (value) {
+            in low..high -> {
+                textView.setBackgroundResource(R.drawable.bg_value_green)
+            }
+            else -> {
+                textView.setBackgroundResource(R.drawable.bg_value_red)
+            }
+        }
     }
 }
