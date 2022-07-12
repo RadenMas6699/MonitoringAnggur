@@ -59,6 +59,7 @@ class HomeFragment : Fragment() {
                     b.tvSoil.text = "$soil"
                     b.tvIntensity.text = "$cahaya %"
                     b.tvWater.text = "$water"
+
                 }
 
                 override fun onCancelled(error: DatabaseError) {
