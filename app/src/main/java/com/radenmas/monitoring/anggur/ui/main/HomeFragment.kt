@@ -50,7 +50,7 @@ class HomeFragment : Fragment() {
 
                     setBackgroundText(b.tvTemp, temp, 25, 30)
                     setBackgroundText(b.tvHum, hum, 70, 80)
-//                    setBackgroundText(b.tvSoil, intSoil, 50, 80)
+                    setBackgroundText(b.tvSoil, soil, 50, 80)
                     setBackgroundText(b.tvIntensity, cahaya, 50, 80)
                     setBackgroundText(b.tvWater, water, 25, 30)
 
