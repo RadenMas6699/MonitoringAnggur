@@ -17,6 +17,7 @@
     <string name="soil">Kelembaban Tanah</string>
     <string name="light">Intensitas Cahaya</string>
     <string name="water">Ketinggian Air</string>
+    <string name="mode">Mode Auto</string>
     <string name="pupuk">Pupuk</string>
     <string name="lamp">Lampu</string>
     <string name="mist_maker">Mist Maker</string>

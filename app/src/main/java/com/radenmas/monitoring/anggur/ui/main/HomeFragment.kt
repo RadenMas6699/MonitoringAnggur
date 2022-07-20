@@ -10,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -33,8 +34,18 @@ class HomeFragment : Fragment() {
         val v = b.root
 
         initView()
-
+onClick()
         return v
+    }
+
+    private fun onClick() {
+        b.switchMode.setOnCheckedChangeListener { compoundButton, b ->
+            if (compoundButton.isChecked){
+                FirebaseDatabase.getInstance().reference.child("control").child("auto").setValue(1)
+            } else{
+                FirebaseDatabase.getInstance().reference.child("control").child("auto").setValue(0)
+            }
+        }
     }
 
     private fun initView() {
